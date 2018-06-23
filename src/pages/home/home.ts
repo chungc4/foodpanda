@@ -10,5 +10,15 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  ionicViewDidLoad(){}
+  
+  goToProfile(): void {
+    this.navCtrl.push("ProfilePage");
+  }
+  goToCreate(): void {
+    this.navCtrl.push('EventCreatePage');
+  }
+  goToList(): void {
+    this.navCtrl.push('EventListPage');
+  }
 }
